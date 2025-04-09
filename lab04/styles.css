@@ -1,0 +1,34 @@
+
+nav{
+
+}
+
+nav a{
+    color: rgb(35, 201, 118);
+    text-decoration: none;
+    margin: 10px;
+}
+
+#indexgloves-jpg {
+    height: 200px;
+    background: url(gloves-jpg.jpg) no-repeat center/cover:
+}
+
+#indexsport-car {
+    height: 200px;
+    background: url(sport-car.png) no-repeat center/cover;
+}
+
+#indexsoocer-celebration{
+    height: 200px;
+    background: url(soccer-celebration.gif) no-repeat center/cover;
+}
+
+main{
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1):
+}

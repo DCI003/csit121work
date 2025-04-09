@@ -1,0 +1,23 @@
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(205, 209, 150);
+    color: rgb(160, 21, 28);
+}
+P {
+    color: rgb(68, 37, 19);
+}
+a{
+    color: rgb(100, 153, 30);
+}
+header{
+    color: rgb(23, 148, 54);
+}
+article{
+    border: 2px solid blue;
+    padding: 10px;
+}
+#Lab3{
+    background-color: rgb(13, 212, 112);
+    color: rgb(21, 92, 151);
+}
