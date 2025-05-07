@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How is the DOM Used?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Using the DOM</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">What is it?</a></li>
+                <li><a href="importance.html">Why is it important?</a></li>
+                <li><a href="usage.html">How is it used?</a></li>
+                <li><a href="sources.html">Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>How is the DOM Used? (with examples)</h2>
+            <p>JavaScript interacts with the DOM through its API (Application Programming Interface). Here are some common ways the DOM is used with JavaScript:</p>
+
+            <h3>Accessing Elements</h3>
+            <p>You can select HTML elements using various methods:</p>
+            <ul>
+                <li><code>document.getElementById('myId')</code>: Selects an element by its unique ID.</li>
+                <li><code>document.querySelector('.myClass')</code>: Selects the first element with the specified class.</li>
+                <li><code>document.querySelectorAll('p')</code>: Selects all paragraph elements.</li>
+            </ul>
+            <pre><code class="language-javascript">
+                // Example: Getting an element by its ID
+                const heading = document.getElementById('main-heading');
+                console.log(heading.textContent); // Output: Welcome to the DOM!
+            </code></pre>
+
+            <h3>Modifying Content</h3>
+            <p>You can change the text content or HTML content of an element:</p>
+            <pre><code class="language-javascript">
+                // Example: Changing the text content
+                heading.textContent = 'DOM Manipulation!';
+
+                // Example: Changing the HTML content
+                const myDiv = document.getElementById('myDiv');
+                myDiv.innerHTML = 'This is new content.';
+            </code></pre>
+
+            <h3>Changing Styles</h3>
+            <p>You can dynamically alter the CSS styles of elements:</p>
+            <pre><code class="language-javascript">
+                // Example: Changing the background color
+                heading.style.backgroundColor = 'lightblue';
+                heading.style.color = 'white';
+            </code></pre>
+
+            <h3>Adding and Removing Elements</h3>
+            <p>You can create new elements and add or remove them from the DOM:</p>
+            <pre><code class="language-javascript">
+                // Example: Creating a new paragraph element
+                const newParagraph = document.createElement('p');
+                newParagraph.textContent = 'This paragraph was added by JavaScript.';
+
+                // Example: Appending the new paragraph to the body
+                document.body.appendChild(newParagraph);
+
+                // Example: Removing an element
+                // newParagraph.remove();
+            </code></pre>
+
+            <h3>Handling Events</h3>
+            <p>You can attach event listeners to elements to respond to user interactions:</p>
+            <pre><code class="language-javascript">
+                // Example: Adding an event listener to a button
+                const myButton = document.getElementById('myButton');
+                myButton.addEventListener('click', function() {
+                    alert('Button clicked!');
+                });
+            </code></pre>
+            <button id="myButton">Click Me</button>
+            <div id="myDiv"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 DOM Education</p>
+    </footer>
+    <script>
+        // Basic JavaScript examples to make the 'Usage' page interactive
+        const heading = document.getElementById('main-heading');
+        if (heading) {
+            console.log(heading.textContent);
+        }
+
+        const myDiv = document.getElementById('myDiv');
+        if (myDiv) {
+            myDiv.innerHTML = '<p>This is some initial content in the div.</p>';
+        }
+
+        const myButton = document.getElementById('myButton');
+        if (myButton) {
+            myButton.addEventListener('click', function() {
+                alert('Button clicked!');
+            });
+        }
+    </script>
+</body>
+</html>
